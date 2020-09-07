@@ -8,7 +8,7 @@
     </button>
   </div>
   <div class="mat-cell">
-    <span *ngIf="filter.path_verbose">({{filter.path_verbose}})</span> {{filter.field_verbose}}
+    <span *ngIf="filter.path_verbose" style="text-underline: black">{{filter.path.toString().replace("__", " > ")}}</span> {{filter.field_verbose}}
   </div>
   <div class="mat-cell">
     <mat-form-field>
